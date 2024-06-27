@@ -1,10 +1,7 @@
 import pandas as pd
-# import sqlalchemy as sa
 import plotly.express as px
 import plotly.graph_objects as go
-# import gif
-import io
-import PIL
+
 
 
 
@@ -29,7 +26,7 @@ fig.update_layout(
     geo_scope='usa', 
 )
 fig.show()
-frames = []
+# frames = []
 # for s, fr in enumerate(fig.frames):
 #     # set main traces to appropriate traces within plotly frame
 #     fig.update(data=fr.data)
