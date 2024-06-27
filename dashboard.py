@@ -85,23 +85,19 @@ Req_res= px.bar(Request_reason, x='Request Reason', y='Count of HIKE_REQUEST_ID.
 
 
 
-# from dash import Dash, dcc, html
+from dash import Dash, dcc, html
 
-# app= Dash()
-# app.layout= [html.Div([
-#     html.Div([
-#         dcc.Graph(figure=fig)
-#     ]),
+app= Dash()
+server= app.server
+app.layout= [html.Div([
+    html.Div([
+        dcc.Graph(figure=fig)
+    ]),
 
-#     html.Div([
-#         dcc.Graph(figure=Req_res),
-#         dcc.Graph(figure=chart)
-#     ], style={'width':'49%'}),
-    
-#     ]
-#     )
+    ]
+    )
 
-# ]
+]
 
 
-# app.run_server(debug=True, use_reloader=False)
+app.run_server(debug=True, use_reloader=False)
